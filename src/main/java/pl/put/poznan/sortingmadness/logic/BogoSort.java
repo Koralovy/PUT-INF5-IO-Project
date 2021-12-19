@@ -5,6 +5,13 @@ import java.util.Collections;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
+
+/**
+* BogoSort is an implementation of the SortingStrategy interface 
+* that provides the BogoSort algorithm
+*
+* @author czarnobylu [Jan Bylicki jbylicki@hotmail.com]
+*/
 public class BogoSort implements SortingStrategy {
     private static void shuffleArray(String[] arr)
     {
