@@ -59,6 +59,12 @@ public class BogoSort implements SortingStrategy {
             if(noIter != -1) noIter--;
         }
     }
+    /**
+    * This is an interface-level call using ArrayLists to invoke the algorithm
+    * @param list the ArrayList<String> to be sorted
+    * @param noIter the number of iterations of the algorithm to perform (-1 to perform all the necessary ones)
+    * @return The sorted ArrayList<String>
+    */
     @Override
     public ArrayList<String> sortSimple(ArrayList<String> list, int noIter)
     {
@@ -68,6 +74,13 @@ public class BogoSort implements SortingStrategy {
         Collections.addAll(list, arr);
         return list;
     }
+    /**
+    * This is an interface-level call using nested ArrayLists to invoke the algorithm
+    * @param list the ArrayList<ArrayList<String>> to be sorted
+    * @param noIter the number of iterations of the algorithm to perform (-1 to perform all the necessary ones)
+    * @param column the column by which the Array should be sorted
+    * @return The sorted ArrayList<ArrayList<String>>
+    */
     @Override
     public ArrayList<ArrayList<String>> sortNested(ArrayList<ArrayList<String>> list, int noIter, String column)
     {
