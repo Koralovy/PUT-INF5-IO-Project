@@ -31,6 +31,12 @@ public class BogoSort implements SortingStrategy {
             arr[i] = a;
         }
     }
+    /**
+    * <p> This method checks if the supplied array is sorted
+    * </p>
+    * @param arr the array to be tested
+    * @return True value if the array is sorted, else False.
+    */
     private static boolean isSorted(String arr[])
     {
         for(int i=1; i<arr.length; i++)
