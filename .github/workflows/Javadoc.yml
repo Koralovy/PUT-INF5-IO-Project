@@ -1,0 +1,25 @@
+name: Javadoc
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Javadoc:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Build javadoc
+        run: mvn --batch-mode --update-snapshots javadoc:javadoc
+
+      - name: Deploy javadoc to GH pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./target/site/apidocs
+          force_orphan: true
