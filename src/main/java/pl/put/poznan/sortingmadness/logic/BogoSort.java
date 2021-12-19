@@ -44,6 +44,13 @@ public class BogoSort implements SortingStrategy {
                 return false;
         return true;
     }
+    /**
+    * <p> This method implements the 
+    * <a href="https://pl.wikipedia.org/wiki/Bogosort">Bogo Sort</a> algorithm
+    * </p>
+    * @param arr the array to be sorted
+    * @param noIter the number of iterations of the algorithm to perform (-1 to perform all the necessary ones)
+    */
     private static void bs(String arr[], int noIter)
     {
         while(!isSorted(arr) && (noIter > 0 || noIter == -1))
