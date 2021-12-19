@@ -13,6 +13,13 @@ import java.util.concurrent.ThreadLocalRandom;
 * @author czarnobylu [Jan Bylicki jbylicki@hotmail.com]
 */
 public class BogoSort implements SortingStrategy {
+    /**
+    * <p> This method shuffles the array using the
+    * <a href="https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm">Fisher-Yates</a>
+    * algorithm
+    * </p>
+    * @param arr the array to be shuffled
+    */
     private static void shuffleArray(String[] arr)
     {
         Random rnd = ThreadLocalRandom.current();
