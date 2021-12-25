@@ -1,7 +1,5 @@
 package pl.put.poznan.sortingmadness.rest;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.util.ArrayList;
 
 public class RequestSimple {
@@ -17,9 +15,3 @@ public class RequestSimple {
         this.isReversed = isReversed;
     }
 }
-/*
-{
-    "jsonString": ["a", "b", "c"],
-    "noIter": 5
-}
- */
