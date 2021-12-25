@@ -46,7 +46,7 @@ public class QuickSort implements SortingStrategy {
 
     }
     @Override
-    public ArrayList<ArrayList<String>> sortNested(ArrayList<ArrayList<String>> list, int noIter, String column)
+    public ArrayList<ArrayList<String>> sortNested(ArrayList<ArrayList<String>> list, int noIter, int column)
     {
         return new ArrayList<ArrayList<String>>();
     }

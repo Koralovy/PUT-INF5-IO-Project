@@ -82,7 +82,7 @@ public class BogoSort implements SortingStrategy {
     * @return The sorted ArrayList&lt;ArrayList&lt;String&gt;&gt; 
     */
     @Override
-    public ArrayList<ArrayList<String>> sortNested(ArrayList<ArrayList<String>> list, int noIter, String column)
+    public ArrayList<ArrayList<String>> sortNested(ArrayList<ArrayList<String>> list, int noIter, int column)
     {
         return new ArrayList<ArrayList<String>>();
     }

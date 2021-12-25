@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public interface SortingStrategy {
     ArrayList<String> sortSimple(ArrayList<String> data, int noIter);
-    ArrayList<ArrayList<String>> sortNested(ArrayList<ArrayList<String>> data, int noIter, String column);
+    ArrayList<ArrayList<String>> sortNested(ArrayList<ArrayList<String>> data, int noIter, int column);
 }
 
 /*
