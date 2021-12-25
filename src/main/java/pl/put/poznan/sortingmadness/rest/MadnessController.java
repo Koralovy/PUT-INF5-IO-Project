@@ -134,8 +134,7 @@ public class MadnessController {
         timer.startTimer();
         ArrayList<ArrayList<String>> output = new ArrayList<>();
         if (request.isReversed == true)
-            //sort.sortNested(request.nestedList, request.noIter, request.column)
-            output = reverser.reverseNested(request.nestedList);
+            output = reverser.reverseNested(sort.sortNested(request.nestedList, request.noIter, request.column));
         else
             output = sort.sortNested(request.nestedList, request.noIter, request.column);
         timer.stopTimer();
