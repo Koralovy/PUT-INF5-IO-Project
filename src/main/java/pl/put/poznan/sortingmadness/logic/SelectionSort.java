@@ -2,6 +2,8 @@ package pl.put.poznan.sortingmadness.logic;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public class SelectionSort implements SortingStrategy {
     private static void ss(String arr[], int noIter){
@@ -30,6 +32,20 @@ public class SelectionSort implements SortingStrategy {
     @Override
     public ArrayList<ArrayList<String>> sortNested(ArrayList<ArrayList<String>> list, int noIter, int column)
     {
-        return new ArrayList<ArrayList<String>>();
+        Map<String,  ArrayList<ArrayList<String>>> hm = new HashMap<String,  ArrayList<ArrayList<String>>>();
+        for(int i=0;i<list.size(); i++)
+        {
+            String c = (list.get(i).get(column));
+            if(hm.get(c) == null)
+                hm.put(c, new  ArrayList<ArrayList<String>>());
+            hm.get(c).add(list.get(i));
+        }
+        String[] keys = hm.keySet().toArray(String[]::new);
+        ss(keys, noIter);
+        list = new ArrayList<ArrayList<String>>();
+        for(String i : keys)
+            list.addAll(hm.get(i));
+        System.out.println(list);
+        return list;
     }
 }
