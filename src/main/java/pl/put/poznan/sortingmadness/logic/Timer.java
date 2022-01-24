@@ -3,7 +3,7 @@ package pl.put.poznan.sortingmadness.logic;
 public class Timer {
     private long start;
     private long end;
-    
+
     public void startTimer() {
         this.start = System.currentTimeMillis();
     }
