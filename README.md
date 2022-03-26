@@ -4,7 +4,7 @@ Authors: Jan Chlebek, Jan Bylicki, Ryszard Dotka
 
 An application used to sort sets of data with different algorithms. It is intended to help the user to assess which method may work best in specific cases and, of course, to sort the data. Numeric data are sorted by standard methods, while text data are sorted lexicographically. At least 6 different sorting methods should be implemented. The application will be available as a remote API, so that it can be integrated into existing tools. The project compiles automatically and produces javadoc documentation available in Github Pages. It also includes relevant backlogs in Polish.
 
-#Sample input:
+# Sample input:
 
 * Simple data structures
 ```
